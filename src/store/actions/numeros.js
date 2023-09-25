@@ -1,16 +1,16 @@
-import {NUM_MIN_CHANGED, NUM_MAX_CHANGED} from './actionTypes'
+import {NUM_MIN_ALTERADO, NUM_MAX_ALTERADO} from './actionsTypes'
 
 //Action Creator
-export function alterarNumeroMinimo(newNumber) {
+function alterarNumeroMinimo(novoNumero) {
     return {
         type: NUM_MIN_ALTERADO,
-        payload: newNumber
+        payload: novoNumero
     }
 }
 
-export function alterarNumeroMaximo(newNumber) {
+ function alterarNumeroMaximo(novoNumero) {
     return {
         type: NUM_MAX_ALTERADO,
-        payload: newNumber
+        payload: novoNumero
     }
 }

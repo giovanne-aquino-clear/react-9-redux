@@ -10,7 +10,10 @@ const reducers = combineReducers({
                     min:action.payload
                 }
             default:
-                return state
+                return {
+                    min: 0,
+                    max: 100
+                }
         }
 
         return{
