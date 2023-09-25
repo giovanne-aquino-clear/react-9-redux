@@ -1,18 +1,45 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Card from './componentes/Card';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+        <h1>Exercicios React-redux</h1>
+        <div className='linha'>
+        <Card title="Card 1" red>
+          Mostrando cores no card atraves de: 
+        
+            Card title="Card 2" blue
+          Mostrando cores no card
+        Card
+        </Card>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className='linha'>
+        <Card title="Card 2" green>
+          Mostrando cores no card atraves de: 
+        
+            Card title="Card 3" greem
+          Mostrando cores no card
+        Card
+        </Card>
+        <Card title="Card 3" blue>
+          Mostrando cores no card atraves de: 
+        
+            Card title="Card 3" blue
+          Mostrando cores no card
+        Card
+        </Card>
+        <Card title="Card 4" purple>
+          Mostrando cores no card atraves de: 
+        
+            Card title="Card 4" purple
+          Mostrando cores no card
+        Card
+        </Card>
+        </div>
       </div>
     );
   }
