@@ -1,13 +1,20 @@
+import {NUM_MIN_ALTERADO, NUM_MAX_ALTERADO} from './actions/actionsTypes'
+
 import {createStore, combineReducers} from 'redux'
 /* import numbersReducer from './reducers/numbers.js'
  */
 const reducers = combineReducers({
     numeros: function(state, action){
         switch(action.type){
-            case 'NUM_MIN_ALTERADO':
+            case NUM_MIN_ALTERADO:
                 return{
                     ...state,
                     min:action.payload
+                }
+                case NUM_MAX_ALTERADO:
+                return{
+                    ...state,
+                    max:action.payload
                 }
             default:
                 return {
