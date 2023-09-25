@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Card from './componentes/Card';
+import Card from './components/Card';
+import Intervalo from './components/intervalo'
 
 class App extends Component {
   render() {
@@ -9,35 +10,17 @@ class App extends Component {
       <div className="App">
         <h1>Exercicios React-redux</h1>
         <div className='linha'>
-        <Card title="Card 1" red>
-          Mostrando cores no card atraves de: 
-        
-            Card title="Card 2" blue
+        <Intervalo></Intervalo>
+        <Card title="Card 2" green>
           Mostrando cores no card
-        Card
         </Card>
         </div>
         <div className='linha'>
-        <Card title="Card 2" green>
-          Mostrando cores no card atraves de: 
-        
-            Card title="Card 3" greem
-          Mostrando cores no card
-        Card
-        </Card>
         <Card title="Card 3" blue>
-          Mostrando cores no card atraves de: 
-        
-            Card title="Card 3" blue
           Mostrando cores no card
-        Card
         </Card>
         <Card title="Card 4" purple>
-          Mostrando cores no card atraves de: 
-        
-            Card title="Card 4" purple
           Mostrando cores no card
-        Card
         </Card>
         </div>
       </div>
