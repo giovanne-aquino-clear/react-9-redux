@@ -2,10 +2,10 @@ import {createStore, combineReducers} from 'redux'
 /* import numbersReducer from './reducers/numbers.js'
  */
 const reducers = combineReducers({
-    numeros: function(state,action){
+    numeros: function(state, action){
         return{
             min: 1,
-            max: 10
+            max: 190
         }
     },
     nomes: function (state,action) {
